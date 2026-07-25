@@ -47,4 +47,4 @@ jobs:
         with:
          context: .
          push: true
-         tags: 44trisha/flask-github-actions:latest
+         tags: 44trisha/trishac:latest
