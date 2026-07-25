@@ -36,3 +36,9 @@ jobs:
 
       - name: Run tests
         run: python test_hello.py
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/flask-app:latest
